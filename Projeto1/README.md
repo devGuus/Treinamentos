@@ -1,1 +1,1 @@
-Esse primeiro projeto foi realizado com a temática de loja de água
+Esse primeiro projeto foi realizado com a temática de venda de residencias
