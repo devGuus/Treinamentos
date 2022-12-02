@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Crie seu evento</title>
+
+</head>
+<body>
+    <!--<label for="titulo">Título do evento</label>
+    <input type="text" name="Titulo" id="titulo">
+
+    <input type="password" name="" id="">
+    <input type="number" name="" id="">
+    <input type="checkbox" name="" id="">
+
+    <select name="" id="">
+        <option value="music">Música</option>
+        <option value="movie">Fílme</option>
+        <option value="games">Jogos</option>
+    </select>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <form action="/search" method="POST"></form>-->
+    <div class="page">
+        <header>
+            <h1>Crie e compartilhe seu próprio evento!</h1>
+            <p>Faça seu próprio formulario rápido e facíl.</p>
+        </header>
+
+        <form action="">
+            <fieldset>
+            <div class="fieldset-wrapper">
+                <legend>Descrições do Evento</legend>
+
+                <div class="input-wrapper">
+                    <label for="titulo-evento">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                    <input type="text" id="event-title" />
+                </div>
+                    <div class="input-wrapper">
+                        <label for="titulo-evento">Link do evento <span>(somente link http)</span></label>
+                        <input type="url" id="event-link" />
+                    </div>
+                        <div class="input-wrapper">
+                            <label for="titulo-evento">Telefone para contato <span>(somente números / no formato (dd))</span></label>
+                            <input type="number" id="event-whats" />
+                        </div>
+                            <div class="input-wrapper">
+                                <label for="titulo-evento">Informações extras</label>
+                                <textarea name="" id="event-extra" cols="30" rows="10"></textarea>
+                            </div>  
+            </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
