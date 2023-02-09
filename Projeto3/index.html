@@ -37,22 +37,24 @@
             <p>Faça seu próprio formulario rápido e facíl.</p>
         </header>
 
-        <form action="">
+        <form id="my-form">
             <fieldset>
             <div class="fieldset-wrapper">
                 <legend>Descrições do Evento</legend>
 
                 <div class="input-wrapper">
                     <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
-                    <input type="text" id="event-title" />
+                    <input type="text" id="event-title" 
+                    required 
+                    minlength="8" />
                 </div>
                     <div class="input-wrapper">
                         <label for="event-link">Link do evento <span>(somente link http)</span></label>
                         <input type="url" id="event-link" />
                     </div>
                         <div class="input-wrapper">
-                            <label for="event-whats">Telefone para contato <span>(somente números / no formato (dd))</span></label>
-                            <input type="number" id="event-whats" />
+                            <label for="event-whats">Telefone para contato <span>(somente números no formato (99 99999-9999)</span></label>
+                            <input type="number" id="event-whats" required />
                         </div>
                             <div class="input-wrapper">
                                 <label for="event-extra">Informações extras</label>
@@ -75,11 +77,12 @@
     
                      <div class="input-wrapper">
                         <label for="event-email">Email do administrador <span>(Digite um email valido)</span></label>
-                        <input type="text" id="event-email" />
+                        <input type="text" id="event-email" required />
                     </div>
                         <div class="input-wrapper">
                             <label for="event-password">Senha de acesso para os participantes <span>(Somente 8 caracteres)</span></label>
-                            <input type="password" id="event-password" />
+                            <input type="password" id="event-password" required 
+                            minlength="8"/>
                         </div>
 
                         <div class="checkbox-wrapper">
@@ -95,22 +98,28 @@
                     <div class="col-3">
                         <div class="input-wrapper">
                             <label for="event-data">Data</label>
-                            <input type="date" id="event-data" />
+                            <input type="date" id="event-data" required />
                         </div>
 
                             <div class="input-wrapper">
                                 <label for="event-begin">Das</label>
-                                <input type="time" id="event-begin" />
+                                <input type="time" id="event-begin" required />
                             </div>
 
                             <div class="input-wrapper">
                                 <label for="event-end">Até</label>
-                                <input type="time" id="event-end" />
+                                <input type="time" id="event-end" required />
                             </div>
                     </div>
                 </div>
             </fieldset>
+
         </form>
+        <footer>
+            <button class="button"
+            formr="my-form">Salvar evento
+        </button>
+        </footer>
     </div>
 </body>
 </html>
