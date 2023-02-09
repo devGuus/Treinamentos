@@ -43,22 +43,72 @@
                 <legend>Descrições do Evento</legend>
 
                 <div class="input-wrapper">
-                    <label for="titulo-evento">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                    <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
                     <input type="text" id="event-title" />
                 </div>
                     <div class="input-wrapper">
-                        <label for="titulo-evento">Link do evento <span>(somente link http)</span></label>
+                        <label for="event-link">Link do evento <span>(somente link http)</span></label>
                         <input type="url" id="event-link" />
                     </div>
                         <div class="input-wrapper">
-                            <label for="titulo-evento">Telefone para contato <span>(somente números / no formato (dd))</span></label>
+                            <label for="event-whats">Telefone para contato <span>(somente números / no formato (dd))</span></label>
                             <input type="number" id="event-whats" />
                         </div>
                             <div class="input-wrapper">
-                                <label for="titulo-evento">Informações extras</label>
+                                <label for="event-extra">Informações extras</label>
                                 <textarea name="" id="event-extra" cols="30" rows="10"></textarea>
                             </div>  
+                                <div class="input-wrapper">
+                                    <label for="event-select">Categoria</label>
+                                    <select id="event-select">
+                                        <option value="live">Ao vivo</option>
+                                        <option value="podcast">PodCast</option>
+                                        <option value="mentorship">mentoria</option>
+                                    </select>
+                                </div>
             </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Privacidade</legend>
+    
+                     <div class="input-wrapper">
+                        <label for="event-email">Email do administrador <span>(Digite um email valido)</span></label>
+                        <input type="text" id="event-email" />
+                    </div>
+                        <div class="input-wrapper">
+                            <label for="event-password">Senha de acesso para os participantes <span>(Somente 8 caracteres)</span></label>
+                            <input type="password" id="event-password" />
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="event-private" />
+                            <label for="event-private">Evento privado</label>
+                        </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Dia e Hora</legend>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-data">Data</label>
+                            <input type="date" id="event-data" />
+                        </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-begin">Das</label>
+                                <input type="time" id="event-begin" />
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-end">Até</label>
+                                <input type="time" id="event-end" />
+                            </div>
+                    </div>
+                </div>
             </fieldset>
         </form>
     </div>
