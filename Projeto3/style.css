@@ -54,6 +54,10 @@ form{
     min-height: 300px;
 
     padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 fieldset{
@@ -79,11 +83,14 @@ fieldset legend{
     display: flex;
     flex-direction: column;
 }
-.input-wrapper label{
+.input-wrapper label,
+.checkbox-wrapper label{
     font-size: 14px;
     line-height: 24px;
     
     color: #4E4958;
+
+    margin-bottom: 8px;
 }
 .input-wrapper label span{
     font-size: 14px;
@@ -97,7 +104,9 @@ fieldset legend{
     color: rgba(79, 5, 148, 0.847);
     font-weight: 400;
 }
-.input-wrapper input, .input-wrapper textarea{
+.input-wrapper input, 
+.input-wrapper textarea,
+.input-wrapper select{
     background: #FAFAFC;
 
     border: 1px solid rgb(207, 207, 207);
@@ -109,7 +118,7 @@ fieldset legend{
 
     padding: 0 24px;
 
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
 
     color: #06021d;
@@ -122,4 +131,55 @@ fieldset legend{
 .input-wrapper label:hover{
     color: rgba(79, 5, 148, 0.847);
     font-weight: 400;
+}
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.col-3{
+    display: flex;
+    gap: 20px;
+}
+
+.col-3 > div:nth-child(1){
+    width: 100%;
+}
+
+.checkbox-wrapper label{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin: 0;
+}
+.checkbox-wrapper{
+    position: relative;
+}
+.checkbox-wrapper input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before{
+    background-image: url(./Img/Check.png);
+    background-size: 22px;
+}
+
+.checkbox-wrapper input:focus + label::before{
+    outline: 2px solid black;
 }
