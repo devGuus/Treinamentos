@@ -1,4 +1,4 @@
-# Projetos-de-treino-web
-### Aqui vou estar colocando alguns projetos realizados para aperfeiçoamento 
-HTML, CSS, JS...
+# Projetos de treino front end
+### Vou estar postando aqui meus projetos de estudo para aperfeiçoamento de front-end
+
  
