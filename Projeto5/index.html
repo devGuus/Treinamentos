@@ -7,23 +7,54 @@
 
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="botao_escreva"></div>
     <button py-click = "escreva_page()" id="write">Diga Olá</button>
+    <button py-click="print_page()" id="print">Print alguma coisa!</button></br></br>  
         
-    <div>
-      <py-terminal>
-    </div>
-    <button py-click="print_page()" id="print">Print alguma coisa!</button>
+    <form>
+        <label for="idTexto">Digite o código do cartão </label></br>
+        <input id="resp" type="text" name="resp" />
+        <input type="submit" value="Verificar" />
+    </form>
+    
+    <!--<button type="btn" id="btnVerfique" value="Verifique" >Verifique</button>
+-->
+    <py-script>
+        def escreva_page():
+            mostra_text = Element("botao_escreva")
+            mostra_text.element.innerText = "Bem-vindo"
 
-<py-script>
-    def escreva_page():
-        mostra_text = Element("botao_escreva")
-        mostra_text.element.innerText = "Bem-vindo"
+        def print_page():
+            print("Ola mundo, usando print")
 
-    def print_page():
-        print("Ola mundo, usando print")
-</py-script>
+        def valideLuhn(code):
+            x = 0
+            aux = False
+
+            for i in range(len(code) -1, -1, -1):
+                digito = int(code[i])
+
+                if aux:
+                    digito *= 2
+                    if digito > 9:
+                        digito -= 9
+                        
+                x += digito
+                aux = not aux
+            
+            return x % 10 == 0
+
+        codigoCartao = input()
+        validando = valideLuhn(codigoCartao)
+
+        if(validando == True):
+            print("Código do cartão verdadeiro")
+        else:
+            print("Código do cartao falso")
+    </py-script>
 </body>
 </html>
