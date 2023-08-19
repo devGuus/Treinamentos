@@ -5,15 +5,20 @@
 
     <title>Card Verification</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <script src="script.js" defer></script>
   </head>
   <body>
-    <form>
-      <h2>Validação de Cartão</h2>
+    <div class="box">  
+      <form>
+        <h1>Validação de Cartão</h1>
 
-      <input type="text" id="resp" placeholder="Digite o código aqui" />
-      <button onclick="validarCartao()">Validar</button>
-      <p id="resultado"></p>
-    </form>
+        <input type="text" id="resp" placeholder="Digite o código aqui" />
+        <!--<button id="btn_validar" onclick="validarCartao()">Validar</button>-->
+        <input type="submit" name="" value="verificar" onclick="validarCartao()" />
+        <p id="resultado"></p>
+      </form>
+    </div>
   </body>
 </html>
