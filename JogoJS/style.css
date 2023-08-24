@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: rgb(193, 253, 253);
+}
+.borda_game{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.player{
+    position: absolute;
+    bottom: 0;  
+    width: 150px;
+    transition: 0.15s ease-in-out;
+}
+.pular{
+    bottom: 100px;
+}
+.tubo{
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100px;
+    height: 100px;
+    /*animation: enemy 2s infinite linear;*/
+}
+@keyframes enemy{
+    from{
+        right: 0%;
+    }
+    to{
+        right: 100%;
+    }
+}
+.time{
+    position: relative;
+    text-align: center;
+    height: 0;
+    top: 10px;
+}   
+.time h2{
+    font-size: 30px;
+    font-family: Verdana;
+    color: red;
+}
+.score h1{    
+    position: relative;
+    margin-left: 10px;  
+    font-size: 40px;
+    font-family: Verdana;
+    font-style: italic;
+}
