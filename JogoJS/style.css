@@ -5,57 +5,88 @@
 }
 body{
     display: flex;
-    background-color: rgb(193, 253, 253);
+    background: linear-gradient(rgb(86, 191, 218), rgb(188, 225, 231));
 }
 .borda_game{
     position: relative;
-    width: 80%;
-    height: 500px;
-    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    border-bottom: 20px solid rgb(3, 246, 28);
     margin: 0 auto;
     margin-top: 10px;
     overflow: hidden;
 }
 .player{
     position: absolute;
-    bottom: 0;  
-    width: 150px;
-    transition: 0.15s ease-in-out;
+    bottom: 0px;  
+    width: 80px;
 }
 .pular{
-    bottom: 100px;
+    bottom: 150px;
+    transition: 0.22s ease-in-out;
 }
 .tubo{
     position: absolute;
-    bottom: 0;
-    right: -100%;
-    width: 100px;
-    height: 100px;
-    /*animation: enemy 2s infinite linear;*/
+    bottom: -10px;
+    right: -50%;
+    width: 80px;
+    animation: enemy 1.8s infinite linear;
 }
-@keyframes enemy{
-    from{
-        right: 0%;
-    }
-    to{
-        right: 100%;
-    }
+.nuvens{
+    position: absolute;
+    width: 600px;
+    right: -100%;
+    animation: cloud 7s infinite linear;
 }
 .time{
     position: relative;
     text-align: center;
     height: 0;
     top: 10px;
-}   
-.time h2{
+
+    font-weight: 600;
     font-size: 30px;
     font-family: Verdana;
     color: red;
-}
+}   
 .score h1{    
     position: relative;
     margin-left: 10px;  
     font-size: 40px;
     font-family: Verdana;
     font-style: italic;
+}
+#buttonReset{
+    position: relative;
+    padding: 10px 50px;
+    background-color: #000000;
+    color: white;
+    border: 2px solid rgb(62, 123, 244);
+    cursor: pointer;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#buttonReset:hover{
+    top: 49%;
+    transition: 0.2s ease-in-out;
+}
+@keyframes enemy{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes cloud{
+    from{
+        right: -80%;
+    }to{
+        right: 100%;
+    }
 }
