@@ -1,24 +1,31 @@
 import PySimpleGUI as sg
 
 def codifique(texto, chave):
-    resultado = ''
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    retorno = ''
     for i in texto:
         if i.isalpha():
-            base = ord('A') if i.isupper() else ord('a')
-            novoTexto = chr((ord(i) - base + chave) % 26 + base)
-            resultado += novoTexto
+            index = alphabet.index(i.upper()) # Utilize index
+            txt_encriptado = chave[index]
+
+            if i.islower():
+                retorno += txt_encriptado.lower()
+            else:
+                retorno += txt_encriptado
         else:
-            resultado += i
-    return resultado
-
+            retorno += i
+    return retorno
 def descriptografe(texto, chave):
-    return codifique(texto, -chave)
-
+    pass
+# EXP: VCHPRZGJNTLSKFBDQWAXEUYMOI
+# Texto: HELLO WORLD 
+# Saida: JRSSB YBWSP
 sg.theme("DarkAmber")
 
 layout = [
     [sg.Text("Bem-vindo ao CriptoTech")],
-    [sg.Text("Deseja criptografar? (Digite-1)\nDeseja descriptografar? (Digite-2)")],
+    [sg.Text("Cifra de Substituição Simples\n\n")],
+    [sg.Text("Deseja criptografar? (Digite-1)")],
     [sg.InputText(key="escolha")],
     [sg.Button("Ok"), sg.Button("Sair")],
 ]
@@ -43,31 +50,11 @@ while True:
             if event_encrypt == sg.WINDOW_CLOSED:
                 break
             if event_encrypt == "Criptografar":
-                key = int(values_encrypt["key_encrypt"])
+                key = values_encrypt["key_encrypt"]
                 cripto = values_encrypt["text_encrypt"]
                 textoCodificado = codifique(cripto, key)
                 window_encrypt["output_encrypt"].update(f"Texto codificado: {textoCodificado}")
         window_encrypt.close()
-
-    elif values["escolha"] == "2":
-        layout_decrypt = [
-            [sg.Text("----Descriptografia----")],
-            [sg.Text("Digite a chave: "), sg.InputText(key="key_decrypt")],
-            [sg.Text("Digite o texto: "), sg.InputText(key="text_decrypt")],
-            [sg.Button("Descriptografar")],
-            [sg.Text("", size=(30, 1), key="output_decrypt")],
-        ]
-        window_decrypt = sg.Window("Descriptografia", layout_decrypt)
-        while True:
-            event_decrypt, values_decrypt = window_decrypt.read()
-            if event_decrypt == sg.WINDOW_CLOSED:
-                break
-            if event_decrypt == "Descriptografar":
-                key = int(values_decrypt["key_decrypt"])
-                cripto = values_decrypt["text_decrypt"]
-                textoDesco = descriptografe(cripto, key)
-                window_decrypt["output_decrypt"].update(f"Texto descodificado: {textoDesco}")
-        window_decrypt.close()
 
     elif values["escolha"] == "0":
         break
