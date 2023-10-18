@@ -1,0 +1,24 @@
+<Login@MDFloatLayout>:
+
+    MDTextField:
+        id:mail
+        pos_hint:{"center_x": 0.5, "center_y": 0.7}
+        mode: "rectangle"
+        size_hint_x: 0.6
+        icon_left: "email"
+        hint_text: "E-mail"
+    MDTextField:
+        id:senha
+        pos_hint:{"center_x": 0.5, "center_y": 0.6}
+        mode: "rectangle"
+        size_hint_x: 0.6
+        hint_text: "Senha"
+        password: True
+        icon_left: "key-variant"
+    MDToolbar:
+        md_bg_color: 1,1,1,0
+        specific_text_color: "Green"
+        pos_hint: {'top': 1}
+        elevation: 0
+        left_action_items: [["arrow_left", lambda x: root.callback()]]    
+Login
