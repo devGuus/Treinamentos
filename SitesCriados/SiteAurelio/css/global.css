@@ -1,0 +1,11 @@
+:root{
+    --font_navbar: 'verdana';
+    --font_notices: 'georgia';
+
+    --color_navbar: rgb(240, 240, 240);
+    --cl_nvHover: rgb(188, 187, 187);
+
+    --bg_navbar: rgb(93, 57, 36);
+    --bg_notices: rgb(198, 198, 198);
+    --bg_btnplay: rgba(79, 36, 3, 0.708);
+}

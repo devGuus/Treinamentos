@@ -1,0 +1,108 @@
+/* Noticias */
+#notice{
+    width: 100%;
+    height: 25vh;
+    padding: 10px 50px;
+    background-color: var(--bg_notices);
+}
+
+#notice-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-title {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+}
+.infos {
+    text-align: center;
+    margin-right: 80px;
+}
+
+.infos p{
+    font-family: var(--font_notices);
+}
+/* Imagens do jogo */
+#gallery {
+    width: 100%;
+    height: 80vh;
+    background: url("../Imagens/aurelioLutando.png") no-repeat center center/cover;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.311);
+}
+
+#gallery-container {
+    width: 50%;
+    height: 80vh;
+    right: 0;
+    position: absolute;
+}
+#gallery-container .gallery-layout{
+    text-align: center;
+}
+
+.gallery-layout h2{
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+.gallery-layout p{
+    font-size: 1.2rem;
+    padding: 15px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* Gallery Arrows */
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow{
+    color: rgb(241, 241, 241);
+}
+
+.arrow i{
+    font-size: 2.8rem;
+    text-shadow: 1px 0px 20px rgba(255, 255, 255, 0.475);
+}
+.arrow i:hover{
+    font-size: 3.2rem;
+    text-shadow: 1px 0px 20px rgb(255, 255, 255);
+    transition: 0.1s;
+}
+/* Gallery 2 */
+#gallery2 {
+    width: 100%;
+    height: 80vh;
+    background: url("../Imagens/menu.png") no-repeat bottom center/cover;
+}
+
+#gallery-container2 {
+    width: 50%;
+    height: 80vh;
+    left: 0;
+    position: absolute;
+}
+#gallery-container2 .gallery-layout2{
+    text-align: center;
+}
+
+.gallery-layout2 h2{
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+    .gallery-layout2 p{
+        font-size: 1.2rem;
+        padding: 15px 0;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
