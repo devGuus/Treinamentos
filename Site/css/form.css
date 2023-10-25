@@ -1,3 +1,4 @@
+@import "../css/global.css"; /* Variaveis */
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@ a{
 #contato {
     width: 50%;
     height: 100vh;
-    background: #eee;
+    background: var(--bg_form_left);
     position: absolute;
 }
 
@@ -47,6 +48,7 @@ form{
     height: 100vh;
     position: absolute;
     right: 0;
+    background: var(--bg_form_right);
 }
 #form-container {
     height: 100vh;
@@ -67,25 +69,40 @@ form{
     padding: 20px 0px;
 }
 
-input {
+input{
     width: 100%;
     padding: 8px;
     font-size: 1.2rem;
     border: 0;
     border-bottom: 2px solid #ccc;
+    border-radius: 2px;
+    background: var(--bg_form_right);
 }
 
 #mensagem{
-    height: 150px;
+    width: 100%;
+    height: 180px;
+    resize: none;
+    border: 2px solid #ccc;
+    background: var(--bg_form_right);
 }
 
-.btn{
-    display: inline-block;
+.btn input{
+    width: 15%;
     margin-top: 50px;
-    background: #eee;
     font-size: 0.9rem;
     font-family: georgia;
     font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #eee;
+
+    animation-duration: 0,2s;
+}
+
+.btn input:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px #111;
 }
 
 .input-alone{
@@ -105,6 +122,13 @@ input {
 .input-alone input:valid ~ label
 {
     transform: translateY(-35px);
+    color: #62626296;
+    font-size: 12px;
+}
+
+.input-alone textarea:focus ~ label
+{
+    transform: translateY(-182px);
     color: #62626296;
     font-size: 12px;
 }

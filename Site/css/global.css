@@ -6,14 +6,19 @@
     --fundo_section: rgb(20, 54, 102);
     --fundo_btn: rgba(33, 77, 148, 0.911);
     --fundo_btnHover: rgba(8, 62, 148, 0.751);
+    --color_button: #19bc8b;
+    
     --txt: rgb(11, 11, 11);
     --txt_white: rgb(255, 255, 255);
     --txt_Mblack: rgb(30, 29, 29);
-    --color_button: #19bc8b;
+    
     --font_header: Verdana;
     --font_principal: 'Fira';
 
     --color: #{$color};
     --hover: #{adjust-hue($color, 45deg)};
+
+    --bg_form_left: rgb(35, 142, 195);
+    --bg_form_right: rgb(248, 248, 248);
 }
 /* --fundo_section: rgb(31, 61, 104); */
