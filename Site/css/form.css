@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#contato {
+    width: 50%;
+    height: 100vh;
+    background: #eee;
+    position: absolute;
+}
+
+#contato-container {
+    height: 100vh;
+    padding: 30% 100px;
+    margin-right: 30%;
+}
+
+#contato-container h1{
+    font-size: 3rem;
+    padding: 15px 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#contato-container p {
+    font-size: 15px;
+    font-family: georgia;
+}
+#contato-container ul {
+    font-size: 30px;
+    display: flex;
+    list-style: none;
+    padding: 15px 0;
+    justify-content: flex-start;
+    letter-spacing: 20px;
+}
+/* Formulario */
+form{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+#form-container {
+    height: 100vh;
+    padding: 20% 100px;
+}
+
+#form-container h2{
+    font-size: 2.8rem;
+}
+
+#form-container label{
+    font-size: 1rem;
+    font-family: georgia;
+    font-weight: bold;
+}
+
+.inputs {
+    padding: 20px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+#mensagem{
+    height: 150px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 50px;
+    background: #eee;
+    font-size: 0.9rem;
+    font-family: georgia;
+    font-weight: bold;
+}
+
+.input-alone{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-alone label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+/* Ação aplicada com o user interagindo na caixa de texto mas aplicada no label */
+.input-alone input:focus ~ label,
+.input-alone input:valid ~ label
+{
+    transform: translateY(-35px);
+    color: #62626296;
+    font-size: 12px;
+}
