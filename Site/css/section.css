@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    text-align: center;
     padding: 15px;
 }
 
@@ -47,6 +48,7 @@
 .frame-title{
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .frames {
@@ -55,6 +57,10 @@
     background: #333;
     padding: 20px;
     border-radius: 5px;
+}
+
+.frames p{
+    font-size: 1rem;
 }
 /* codigo */
 #code{
@@ -80,6 +86,15 @@
     font-size: 1.2rem;
 }
 
+.info a{
+    font-size: 1.3rem;
+    color: #430a9f;
+    text-decoration: underline;
+}
+
+.info span{
+    font-weight: bold;
+}
 .codeImg{
     width: 700px;
 }
@@ -101,6 +116,7 @@
 
 .aluno{
     display: flex;
+    width: 85%;
     align-items: center;
     font-size: 1.2rem;
     background: #333;
@@ -114,6 +130,23 @@
     width: 180px;
     border-radius: 50%;
     margin: 15px;
+}
+
+.aluno li{
+    padding: 0 10px;
+    font-size: 1.8rem;
+    color: #6e8df2;
+}
+
+.aluno-descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.aluno-nome{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 /* Fotos */
 

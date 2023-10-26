@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -11,10 +10,10 @@
     <section id="contato">
         <div id="contato-container">
             <h1>Contate-Nos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa nisi explicabo omnis beatae labore.</p>
+            <p>Acesse o nosso linkedin atráves do icone abaixo e também acesse nosso repositório no GitHub para ver o código completo do site.</p>
             <ul>
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-square-github"></i></a></li> <!-- syle= "color: cor;"-->
+                <li><a href="https://www.linkedin.com/in/gustavo-marcos-xavier-a78845247/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/devGuus/Treinamentos/tree/main/Site" target="_blank"><i class="fa-brands fa-square-github"></i></a></li> <!-- syle= "color: cor;"-->
             </ul>
         </div>
     </section>
@@ -23,7 +22,7 @@
             <h2>Formulário de Contato</h2>
             <div class="inputs">                
                 <div class="input-alone">
-                    <input type="text" id="box-input" autocomplete="off" required/>
+                    <input type="text" id="box-input" autocomplete="off" minlength="1" required/>
                     <label for="box-input">Nome</label>
                 </div>
                 <div class="input-alone"> 
@@ -31,7 +30,7 @@
                     <label for="box-input">Email</label>            
                 </div>
                 <div class="input-alone">                   
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" minlength="3" maxlength="150"></textarea>
                     <label for="box-input">Mensagem</label>             
                 </div>
                 <div class="btn"><input type="submit" name="Enviar"></div>    

@@ -35,4 +35,5 @@
 
 #navbar-itens li:hover {
     color: var(--txt_Mblack);
+    transform: translate3d(-5px, 2px, 0px);
 }
