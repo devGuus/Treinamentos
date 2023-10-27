@@ -52,11 +52,15 @@
 }
 
 .frames {
-    display: flex;
+    display: inline;
     flex-direction: column;
     background: #333;
     padding: 20px;
     border-radius: 5px;
+}
+
+.frames i{
+    padding: 0 3px 0 0;
 }
 
 .frames p{
