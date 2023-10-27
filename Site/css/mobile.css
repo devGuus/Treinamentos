@@ -1,71 +1,81 @@
-@media screen and (max-width: 768px){
-    #navbar{
+@media screen and (max-width: 768px) {
+    #navbar {
         height: 180px;
+        background: var(--fundo_nav);
     }
 
-    #navbar-container{
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    #navbar-itens{
+    #navbar-itens {
         flex-direction: column;
         text-align: center;
         width: 100px;
     }
 
-    #navbar-itens li{
+    #navbar-itens li {
         padding: 10px;
     }
 
-    #navbar-itens li:nth-child(2){ /* seleciona o segundo li */
+    #navbar-itens li:nth-child(2) {
+        /* seleciona o segundo li */
         border-top: 1px solid #333;
         border-bottom: 1px solid #333;
     }
+
     /* Fundo*/
-    #fundo-container{
+    #fundo-container {
         padding: 40px;
     }
+
     /* Ferramentas */
-    #tools-container{
-    grid-template-columns: repeat(2, 1fr);
+    #tools-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .toolsIcons{
+    .toolsIcons {
         width: 50%;
     }
 
     /* Projeto */
-    #project-container{
+    #project-container {
         grid-template-columns: 1fr;
     }
 
-    #project-container .frames:nth-child(2){
+    #project-container .frames:nth-child(2) {
         margin: 15px 0;
     }
+
     /* code */
-    #code-container{
+    #code-container {
         flex-direction: column;
     }
 
-    #infos{
+    #infos {
         width: 90%;
     }
-    .info{
+
+    .info {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     /* Integrantes do grupo */
-    #grupo-container{
+    #grupo-container {
         flex-direction: column;
         text-align: center;
     }
+
     /* Fotos */
-    #imagens-container{
+    #imagens-container {
         grid-template-columns: 1fr;
     }
-    #imagem-galeria{
+
+    #imagem-galeria {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1330px) {
+    #imagens-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
