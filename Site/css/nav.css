@@ -3,7 +3,7 @@
     height: 65px;
     background: var(--fundo_nav);
     color: var(--txt);
-    position: fixed;
+    /* position: fixed; */
     border-radius: 5px;
 }
 

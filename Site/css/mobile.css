@@ -43,21 +43,6 @@
         margin: 15px 0;
     }
 
-    /* code */
-    #code-container {
-        flex-direction: column;
-    }
-
-    #infos {
-        width: 90%;
-    }
-
-    .info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     /* Integrantes do grupo */
     #grupo-container {
         flex-direction: column;
@@ -77,5 +62,22 @@
 @media screen and (min-width: 768px) and (max-width: 1330px) {
     #imagens-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    /* code */
+    #code-container {
+        flex-direction: column;
+    }
+
+    #infos {
+        width: 90%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }

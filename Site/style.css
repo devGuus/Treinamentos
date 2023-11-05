@@ -3,6 +3,7 @@
 @import "./css/section.css";
 @import "./css/nav.css";
 @import "./css/mobile.css";
+@import "./css/interacao.css";
 
 * {
     margin: 0;

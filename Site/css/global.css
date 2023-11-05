@@ -2,15 +2,16 @@
 
 :root {
     --send: rgb(9, 199, 224);
-    --fundo_nav: rgba(41, 79, 99, 0.477);
+    --fundo_nav: rgb(0, 42, 64);
     --fundo_section: rgb(20, 54, 102);
-    --fundo_btn: rgba(33, 77, 148, 0.911);
-    --fundo_btnHover: rgba(8, 62, 148, 0.751);
+    --fundo_btn: rgba(0, 86, 224, 0.911);
+    --fundo_btnHover: rgba(7, 76, 187, 1);
     --color_button: #19bc8b;
     
-    --txt: rgb(11, 11, 11);
+    --txt: rgb(255, 255, 255);
     --txt_white: rgb(255, 255, 255);
-    --txt_Mblack: rgb(208, 217, 28);
+    --txt_Mblack: rgb(215, 215, 215);
+    --txt_shadow: rgb(0, 0, 0);
     
     --font_header: Verdana;
     --font_principal: 'Fira';
