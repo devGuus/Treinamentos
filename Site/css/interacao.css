@@ -5,6 +5,11 @@
     color: white;
 }
 
+.interacao .titles{
+    padding: 20px 0;
+    font-size: 2.1rem;
+}
+
 #interacao-container label {
     text-align: center;
     font-size: 0, 75rem;
@@ -34,7 +39,7 @@
 }
 
 #setas [class="fa-solid fa-chevron-up"]{
-    display: none;
+    display: none;  
 }
 
 /*Cor após select*/

@@ -81,3 +81,13 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 710px) {
+    .codeImg {
+        width: 400px
+    }
+
+    #grupo{
+        flex-direction: column;
+    }
+}
