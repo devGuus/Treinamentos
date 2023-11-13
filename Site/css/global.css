@@ -3,9 +3,9 @@
 :root {
     --send: rgb(9, 199, 224);
     --fundo_nav: #abfaf5;
-    --fundo_section: rgb(20, 54, 102);
-    --fundo_btn: rgba(0, 86, 224, 0.911);
-    --fundo_btnHover: rgba(7, 76, 187, 1);
+    --fundo_section: #45474B;
+    --fundo_btn: #FFC436;
+    --fundo_btnHover: #eab231;
     --color_button: #19bc8b;
 
     --txt: rgb(255, 255, 255);

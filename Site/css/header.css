@@ -2,7 +2,7 @@
     display: inline-block;
     padding: 13px 20px 13px;
     background: var(--fundo_btn);
-    color: #dedcdc;
+    color: #444343;
     border-radius: 5px;
     transition: background 500ms ease;
 
@@ -15,7 +15,7 @@
 #fundo .btn:hover {
     cursor: pointer;
     background: var(--fundo_btnHover);
-    color: #f3f3f3;
+    color: #2a2929;
 }
 
 #fundo {

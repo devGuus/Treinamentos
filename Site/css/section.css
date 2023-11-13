@@ -10,7 +10,7 @@
 
 #tools {
     width: 100%;
-    background: #2C74B3;
+    background: #FFF0CE;
     color: #111;
     padding: 50px;
 }
@@ -29,10 +29,14 @@
     width: 25%;
 }
 
+.toolsIcons:hover {
+    transform: translateY(-15px);
+}
+
 /* Projeto */
 #project {
     width: 100%;
-    background: #27669d;
+    background: var(--fundo_section);
     color: #eee;
     padding: 50px;
 }
@@ -71,7 +75,7 @@
 #code {
     width: 100%;
     padding: 50px;
-    background: #eee;
+    background: #FFF0CE;
 }
 
 #code-container {
@@ -109,7 +113,7 @@
 /* Integrantes do grupo */
 #grupo {
     width: 100%;
-    background: #27669d;
+    background: var(--fundo_section);
     color: #eee;
     padding: 50px;
 }
@@ -169,9 +173,10 @@
 /* Fotos */
 
 #imagens {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 50px;
+    background-color: var(--fundo_section);
 }
 
 #imagens-container {
@@ -191,7 +196,7 @@
 /* Footer */
 #footer {
     display: flex;
-    background: var(--fundo_section);
+    background: #393939;
     color: #eee;
     padding: 30px;
     flex-direction: column;

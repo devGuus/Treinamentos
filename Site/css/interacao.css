@@ -1,7 +1,7 @@
 /* interacao */
 .interacao {
     height: 100vh;
-    background: #2C74B3;
+    background: #FFF0CE;
     color: white;
 }
 
@@ -13,6 +13,7 @@
 .interacao .titles {
     padding: 20px 0;
     font-size: 2.1rem;
+    color: black;
 }
 
 #interacao-container label {
