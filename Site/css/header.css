@@ -1,0 +1,46 @@
+#fundo .btn { 
+    display: inline-block;
+    padding: 13px 20px 13px;
+    background: var(--fundo_btn);
+    color: #dedcdc;
+    border-radius: 5px;
+    transition: background 500ms ease;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#fundo .btn:hover {
+    cursor: pointer;
+    background: var(--fundo_btnHover);
+    color: #f3f3f3;
+}
+
+#fundo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('../imagens/plataforma.jpg') no-repeat center center/cover;
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
+}
+
+#fundo-container {
+    text-align: center;
+}
+
+#fundo-container h2 {
+    font-size: 2.5rem;
+    text-shadow: 0.1em 0.01em var(--txt_shadow)
+}
+
+#fundo-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+    text-shadow: 0.1em 0.01em var(--txt_shadow)
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300;1,500&display=swap');
+
+:root {
+    --send: rgb(9, 199, 224);
+    --fundo_nav: #abfaf5;
+    --fundo_section: rgb(20, 54, 102);
+    --fundo_btn: rgba(0, 86, 224, 0.911);
+    --fundo_btnHover: rgba(7, 76, 187, 1);
+    --color_button: #19bc8b;
+
+    --txt: rgb(255, 255, 255);
+    --txt_white: rgb(255, 255, 255);
+    --txt_Mblack: rgb(215, 215, 215);
+    --txt_shadow: rgb(0, 0, 0);
+
+    --font_header: Verdana;
+    --font_principal: 'Fira';
+
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+
+    --bg_form_left: rgb(35, 142, 195);
+    --bg_form_right: rgb(248, 248, 248);
+}
+
+/* --fundo_section: rgb(31, 61, 104); */
