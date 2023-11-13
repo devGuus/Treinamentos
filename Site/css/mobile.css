@@ -1,7 +1,6 @@
 @media screen and (max-width: 768px) {
     #navbar {
         height: 180px;
-        background: var(--fundo_nav);
     }
 
     #navbar-itens {
