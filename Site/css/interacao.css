@@ -1,8 +1,12 @@
 /* interacao */
 .interacao {
     height: 100vh;
-    background: #FFF0CE;
+    background: #fffcf6;
     color: white;
+}
+
+label{
+    color: #514d4d;
 }
 
 .intIten {
