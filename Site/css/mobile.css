@@ -90,4 +90,8 @@
     #grupo{
         flex-direction: column;
     }
+
+    #grupo-container img{
+        display: none;
+    }
 }
