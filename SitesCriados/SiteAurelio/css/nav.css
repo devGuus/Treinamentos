@@ -3,7 +3,7 @@
     height: 60px;
     background: var(--bg_navbar);
     color: #eee;
-    /* position: fixed; */
+    position: fixed;
 }
 #navbar-container{
     display: flex;
@@ -11,7 +11,7 @@
     height: 100%;
     margin: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo{
